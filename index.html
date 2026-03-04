@@ -184,11 +184,11 @@
 
       // --- FIXED DIRECTIONS SYSTEM ---
       // We removed the broken geocoder text boxes and added default draggable pins
-      const routingControl = L.Routing.control({
-  waypoints: [
-    L.latLng(12.9716, 77.5946), // This is the MG Road point
-    L.latLng(12.9352, 77.6245)  // This is the Koramangala/Vittal Mallya area
-  ],
+      // --- FIXED DIRECTIONS SYSTEM ---
+const routingControl = L.Routing.control({
+  waypoints: [], // 👈 Make this empty!
+  routeWhileDragging: true,
+  showAlternatives: false,
         routeWhileDragging: true,
         showAlternatives: false,
         addWaypoints: false, // Prevents adding accidental middle-points
